@@ -1,0 +1,41 @@
+\d \D
+. \.
+[abc] [^b]
+[A-Z^n-p][^x-z] \w \W 
+a{1,3} [wxy]{5} .{2,6} 
+a+ [abc]+ .* aa+b*c+ 
+ab?c files? \? 
+\s \S \t \n \r
+^Mission: successful$
+^(file.*)\.pdf$
+(\w+\s+(\d+))
+(.+)x(\d+)
+I love (cats|dogs)
+
+// Exercise 1: Matching Numbers 
+^-?\d+(,\d+)*(\.\d+(e\d+)?)?$  
+
+// Exercise 2: Matching Phone Numbers
+1?[\s]?\(?(\d{3})\)?[ -]?\d{3}[ -]?\d{4} 
+
+// Exercise 3: Matching Emails
+^([\w\.]*).*@
+    (\w*?\.?\w+)\+?\w*@\w*\.\e?u?\.?com 
+
+// Exercise 4: Capturing HTML Tag
+<(\w+)
+    >([\w\s]*)<
+        ='([\w://.]*)'
+
+// Exercise 5: Capturing Filename Data
+(\w+)\.(jpg|png|gif)$
+
+// Exercise 6: Matching Lines
+^\s*(.*)\s*$
+
+// Problem 7: Extracting information from a log file\
+(\w+)\(([\w\.]+):(\d+)\)
+
+// Exercise 8: Extracting Data From URLs
+(\w+)://([\w\-\.]+)(:(\d+))?
+
